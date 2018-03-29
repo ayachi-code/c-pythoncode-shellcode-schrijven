@@ -1,6 +1,9 @@
 //libs importeren
 //Invoer uitvoer lib 
 #include <stdio.h>
+//String bewerking module geimporteerd
+#include <string.h>
+
 
 //Main functie
 int main(int argc, char **argv)
@@ -12,6 +15,7 @@ int main(int argc, char **argv)
         for (i = 1; i < argc; i++) {
             //Char variable gemaakt met --help als inhoud
             char *help = "--help";
+
         }
     } else {
         //Als de gene geen paramter toevoegt dan word deze bericht onder uitgevoerd...
