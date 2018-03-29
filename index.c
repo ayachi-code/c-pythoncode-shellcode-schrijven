@@ -35,6 +35,8 @@ int main(int argc, char **argv)
                     printf("bestaat \n");
                     //opent bestand code.py en geeft het schrijf permission
                     FILE* pythoncode = fopen("python-code/code.py","w");
+                    //Sluit het bestand
+                    fclose(pythoncode);
                     //Sluit de map
                     closedir(pythoncodemap);
                 } else if(ENOENT == errno){
