@@ -26,6 +26,9 @@ int main(int argc, char **argv)
                 printf("Voer -p uit om python code te schrijven en het teglijkertijd ook uit tevoeren\n");
             } else if(!strcmp(argv[i],pythonprogramma)) {
                 //Checkt als -p in de array argv[] zit
+                DIR* pythoncodemap = opendir("python-code");
+               closedir(pythoncodemap);
+
                 
             }
 
