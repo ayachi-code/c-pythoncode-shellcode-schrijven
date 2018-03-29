@@ -32,9 +32,10 @@ int main(int argc, char **argv)
                 DIR* pythoncodemap = opendir("python-code");
                 //Checkt als map bestaat
                 if (pythoncodemap) {
-                    printf("bestaat \n");
                     //opent bestand code.py en geeft het schrijf permission
                     FILE* pythoncode = fopen("python-code/code.py","w");
+                    //Print type je python code op het scherm
+                    printf("Type je python code: \n");
                     //Sluit het bestand
                     fclose(pythoncode);
                     //Sluit de map
