@@ -7,6 +7,8 @@
 #include <errno.h>
 //Mappen libary 
 #include <dirent.h>
+//Standaar functies en zoals de system() functie geimporteerd
+#include <stdlib.h>
 
 
 //Main functie
@@ -28,12 +30,14 @@ int main(int argc, char **argv)
                 //Checkt als -p in de array argv[] zit
                 //Opent de python-code map
                 DIR* pythoncodemap = opendir("python-code");
+                //Checkt als map bestaat
                 if (pythoncodemap) {
                     printf("bestaat \n");
-
+                    
                     //Sluit de map
                     closedir(pythoncodemap);
                 } else if(ENOENT == errno){
+                    //Als map niet bestaat
                     printf("map bestaat niet \n");
                 }   
 
