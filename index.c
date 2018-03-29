@@ -33,7 +33,8 @@ int main(int argc, char **argv)
                 //Checkt als map bestaat
                 if (pythoncodemap) {
                     printf("bestaat \n");
-                    
+                    //opent bestand code.py en geeft het schrijf permission
+                    FILE* pythoncode = fopen("python-code/code.py","w");
                     //Sluit de map
                     closedir(pythoncodemap);
                 } else if(ENOENT == errno){
