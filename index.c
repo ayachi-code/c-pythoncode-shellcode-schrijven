@@ -10,7 +10,8 @@ int main(int argc, char **argv)
         int i;
         //Alle paramters na de commando worden geloopt en dan geprint...
         for (i = 1; i < argc; i++) {
-            printf("%s\n",argv[i]);
+            //Char variable gemaakt met --help als inhoud
+            char *help = "--help";
         }
     } else {
         //Als de gene geen paramter toevoegt dan word deze bericht onder uitgevoerd...
