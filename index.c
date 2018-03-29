@@ -34,6 +34,8 @@ int main(int argc, char **argv)
                 if (pythoncodemap) {
                     //opent bestand code.py en geeft het schrijf permission
                     FILE* pythoncode = fopen("python-code/code.py","w");
+                    //char variablen pythoncodetext met een buffer van 500....
+                    char pythoncodetext[500];
                     //Print type je python code op het scherm
                     printf("Type je python code: \n");
                     //Sluit het bestand
