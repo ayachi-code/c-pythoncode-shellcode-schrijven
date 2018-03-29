@@ -15,6 +15,10 @@ int main(int argc, char **argv)
         for (i = 1; i < argc; i++) {
             //Char variable gemaakt met --help als inhoud
             char *help = "--help";
+            if (!strcmp(argv[i],help)) {
+                printf("hoi\n");
+            }
+
 
         }
     } else {
