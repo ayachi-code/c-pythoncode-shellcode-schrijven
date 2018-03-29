@@ -5,6 +5,8 @@
 #include <string.h>
 //error codes libary
 #include <errno.h>
+//Mappen libary 
+#include <dirent.h>
 
 
 //Main functie
