@@ -33,7 +33,7 @@ int main(int argc, char **argv)
                 //Checkt als map bestaat
                 if (pythoncodemap) {
                     //opent bestand code.py en geeft het schrijf permission
-                    FILE* pythoncode = fopen("python-code/code.py","w");
+                    FILE* pythoncode = fopen("python-code/code.py","w+");
                     //char variablen pythoncodetext met een buffer van 500....
                     char pythoncodetext[500];
                     //Print type je python code op het scherm
@@ -42,10 +42,13 @@ int main(int argc, char **argv)
                     scanf("%s",pythoncodetext);
                     //Schrijft de code in het bestand code.py
                     fprintf(pythoncode,"%s",pythoncodetext);
+                    printf("%s\n",pythoncodetext);
                     //Sluit het bestand
                     fclose(pythoncode);
                     //Sluit de map
                     closedir(pythoncodemap);
+                    //Python code word uigevoerd
+                    system("python3 python-code/code.py");
                 } else if(ENOENT == errno){
                     //Als map niet bestaat
                     printf("map bestaat niet en word dus gemaakt :) \n");
