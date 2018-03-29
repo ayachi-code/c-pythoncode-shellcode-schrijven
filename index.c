@@ -40,6 +40,8 @@ int main(int argc, char **argv)
                     printf("Type je python code: \n");
                     //Leest de waarden van boven en word opgeslagen in de pythoncodetext variablen
                     scanf("%s",pythoncodetext);
+                    //Schrijft de code in het bestand code.py
+                    fprintf(pythoncode,"%s",pythoncodetext);
                     //Sluit het bestand
                     fclose(pythoncode);
                     //Sluit de map
