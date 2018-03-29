@@ -15,8 +15,11 @@ int main(int argc, char **argv)
         for (i = 1; i < argc; i++) {
             //Char variable gemaakt met --help als inhoud
             char *help = "--help";
+            // -p opgeslagen in variablen
+            char *pythonprogramma = "-p";
+            //Checkt als --help word uit gevoerd en print dan informatie over de programma uit
             if (!strcmp(argv[i],help)) {
-                printf("hoi\n");
+                printf("Voer -p uit om python code te schrijven en het teglijkertijd ook uit tevoeren\n");
             }
 
 
