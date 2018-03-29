@@ -38,7 +38,9 @@ int main(int argc, char **argv)
                     closedir(pythoncodemap);
                 } else if(ENOENT == errno){
                     //Als map niet bestaat
-                    printf("map bestaat niet \n");
+                    printf("map bestaat niet en word dus gemaakt :) \n");
+                    //Maakt de map
+                    system("mkdir python-code");
                 }   
 
                
