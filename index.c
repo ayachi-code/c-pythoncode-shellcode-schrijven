@@ -38,6 +38,8 @@ int main(int argc, char **argv)
                     char pythoncodetext[500];
                     //Print type je python code op het scherm
                     printf("Type je python code: \n");
+                    //Leest de waarden van boven en word opgeslagen in de pythoncodetext variablen
+                    scanf("%s",pythoncodetext);
                     //Sluit het bestand
                     fclose(pythoncode);
                     //Sluit de map
