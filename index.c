@@ -20,6 +20,9 @@ int main(int argc, char **argv)
             //Checkt als --help word uit gevoerd en print dan informatie over de programma uit
             if (!strcmp(argv[i],help)) {
                 printf("Voer -p uit om python code te schrijven en het teglijkertijd ook uit tevoeren\n");
+            } else if(!strcmp(argv[i],pythonprogramma)) {
+                //Checkt als -p in de array argv[] zit
+                printf("p word uitgevoer\n");
             }
 
 
